@@ -1,12 +1,12 @@
-<h1>Cocktail focus :</h1>
+<h1>Liste de Cocktails :</h1>
 
 <ul>
-  <% cocktails.each do |ingredient| %>
-    ingredient.name
+  <% cocktails.each do |cocktail| %>
+    <li><%= cocktail.name %></li>
   <% end %>
 </ul>
 
 
 
-
-
+<%= link_to 'Create a cocktail', new_cocktail_review_path(@cocktails) %> |
+<%= link_to 'Back', cocktails_path %>
